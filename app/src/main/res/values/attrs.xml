@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="OvalLoadView">
+        <attr name="progress_color" format="color" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--不模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+    <color name="transparent">#00FFFFFF</color>
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <color name="rippelColor">#FFFFFF</color>
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension" />
+        <attr name="rb_radius" format="dimension" />
+        <attr name="rb_duration" format="integer" />
+        <attr name="rb_rippleAmount" format="integer" />
+        <attr name="rb_scale" format="float" />
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0" />
+            <enum name="strokeRipple" value="1" />
+        </attr>
+    </declare-styleable>
+    <!-- From: file:/Users/fyu/Workplace/android-ripple-background/library/src/main/res/values/dimensions.xml -->
+    <eat-comment />
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+
+
+    <declare-styleable name="RollingView">
+        <attr name="rv_textSize" format="dimension" />
+        <attr name="rv_textColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircularImageView">
+
+        <!-- Specifies whether or not to draw a circular border around the image. -->
+        <attr name="border" format="boolean" />
+        <!-- Specifies the color of the border draw around the image. (if enabled) -->
+        <attr name="border_color" format="color" />
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="border_width" format="dimension" />
+        <!-- Specifies whether or not to draw a selector on this view upon touch events. -->
+        <attr name="selector" format="boolean" />
+        <!-- Specifies the color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="selector_color" format="color" />
+        <!-- Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="selector_stroke_color" format="color" />
+        <!-- Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="selector_stroke_width" format="dimension" />
+        <!-- Specifies whether or not to draw a shadow around your circular image. -->
+        <attr name="shadow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="GoodProgressView">
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="bgColor" format="color" />
+        <attr name="texColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="IndexBar">
+        <attr name="textSize" format="dimension"/>
+        <attr name="pressBackground" format="color" />
+    </declare-styleable>
+    <declare-styleable name="WaveProgress">
+        <!-- 是否开启抗锯齿 -->
+        <attr name="antiAlias" />
+        <!-- 深色水波动画时间 -->
+        <attr name="darkWaveAnimTime" format="integer" />
+        <!-- 浅色水波动画时间 -->
+        <attr name="lightWaveAnimTime" format="integer" />
+        <!-- 最大值 -->
+        <attr name="maxValue" />
+        <!-- 当前值 -->
+        <attr name="value" />
+        <attr name="valueColor" />
+        <attr name="valueSize" />
+        <!-- 绘制内容相应的提示语 -->
+        <attr name="hint" />
+        <attr name="hintSize" />
+        <attr name="hintColor" />
+        <!-- 圆环宽度 -->
+        <attr name="circleWidth" format="dimension" />
+        <!-- 圆环颜色 -->
+        <attr name="circleColor" format="color|reference" />
+        <!-- 背景圆环颜色 -->
+        <attr name="bgCircleColor" format="color|reference" />
+        <!-- 锁定水波不随圆环进度改变，默认锁定在50%处 -->
+        <attr name="lockWave" format="boolean" />
+        <!-- 水波数量 -->
+        <attr name="waveNum" format="integer" />
+        <!-- 水波高度，峰值和谷值之和 -->
+        <attr name="waveHeight" format="dimension" />
+        <!-- 深色水波颜色 -->
+        <attr name="darkWaveColor" format="color|reference" />
+        <!-- 是否显示浅色水波 -->
+        <attr name="showLightWave" format="boolean" />
+        <!-- 浅色水波颜色 -->
+        <attr name="lightWaveColor" format="color|reference" />
+        <!-- 浅色水波的方向 -->
+        <attr name="lightWaveDirect" format="enum">
+            <enum name="L2R" value="0" />
+            <enum name="R2L" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LX_WaveView">
+        <attr name="first_wave_color" format="color"/>
+
+        <attr name="is_circle" format="boolean"/>
+
+        <attr name="normalPercentColor" format="color"/>
+        <attr name="overPercentColor" format="color"/>
+        <attr name="percentSize" format="dimension"/>
+
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+
+        <attr name="move_distance" format="dimension"/>
+        <attr name="speed" format="integer"/>
+
+    </declare-styleable>
+    <declare-styleable name="LD_WaveView">
+        <attr name="wave_color" format="color"></attr>
+        <attr name="wave_circle" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>
